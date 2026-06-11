@@ -45,9 +45,12 @@ st.warning(
     "and streak data. Your exam date and name will be kept."
 )
 confirm = st.checkbox("I understand this cannot be undone")
-if st.button("Reset All Progress", type="primary", disabled=not confirm):
-    reset_progress()
-    st.success("Progress reset. Start fresh from Day 1!")
+if st.button("Reset All Progress", type="primary"):
+    if confirm:
+        reset_progress()
+        st.success("Progress reset. Start fresh from Day 1!")
+    else:
+        st.error("Please check the confirmation box first.")
 
 # App info
 st.markdown("---")
