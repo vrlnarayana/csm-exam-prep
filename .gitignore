@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+develop-eggs/
+.installed.cfg
+lib/
+lib64/
+*.so
+
+# Virtual environment
+venv/
+env/
+.env/
+.venv/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editor
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Superpowers / dev tools
+.superpowers/
+
+# Logs
+*.log
+
+# NOTE: data/*.db is intentionally NOT ignored — the database is checked in
+# so Streamlit Cloud has a pre-seeded DB on first deploy.
